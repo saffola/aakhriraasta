@@ -1,0 +1,67 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+    android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/displayPic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ar_rickshaw"/>
+
+    <TextView
+        android:id="@+id/operatorName"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/displayPic"
+        android:layout_marginTop="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/transitStatus"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/displayPic"
+        android:layout_below="@id/operatorName"
+        android:layout_marginRight="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/transitDistance"
+        android:textColor="#000"
+        android:text="0.12 km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/operatorName"
+        android:layout_toRightOf="@id/transitStatus"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:id="@+id/buttonCall"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/buttonLocate"
+        android:background="@drawable/ar_phone_icon" />
+
+    <Button
+        android:id="@+id/buttonLocate"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ar_marker_icon" />
+
+</RelativeLayout>
